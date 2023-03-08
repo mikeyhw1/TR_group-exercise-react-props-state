@@ -1,4 +1,4 @@
-# React Props & State with Chuck Norris
+# React Props & State with Chuck Norris!
 
 An in-session group/paired activity to get practicing React!
 
@@ -38,6 +38,3 @@ See below for how to get started. 👇
 👉 There are a number of comments which help explain some of the React syntax.
 
 👉 Your mission is to implement all of the [User Requirements](./user_requirements/user_requirements.md) found in `user_requirements.md`.
-
-
-
