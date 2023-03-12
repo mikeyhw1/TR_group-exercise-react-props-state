@@ -28,12 +28,8 @@ function App() {
         },
     ]);
 
-    const JokeList = jokes.map((i) => {
-        return (
-            <>
-                <ChuckJoke jokeItem={i} />
-            </>
-        );
+    const filteredJokes: Array<Joke> = jokes.filter((i) => {
+        return i.id === 3;
     });
 
     return (
@@ -46,7 +42,14 @@ function App() {
 
             <h2>Jokes:</h2>
             <hr />
-            <>{JokeList}</>
+            {jokes.map((i) => (
+                <ChuckJoke key={i.id} jokeItem={i} />
+            ))}
+
+            <h2>Filtered Jokes:</h2>
+            {filteredJokes.map((i) => (
+                <ChuckJoke key={i.id} jokeItem={i} />
+            ))}
         </div>
     );
 }
